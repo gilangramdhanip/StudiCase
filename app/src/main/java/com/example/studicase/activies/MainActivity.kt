@@ -127,8 +127,8 @@ class MainActivity : AppCompatActivity() {
                         ).show()
                     }
                     Hasil.Status.SUCCESS -> {
-                        val albums = result.data
-                        albums?.let {
+                        val data = result.data
+                        data?.let {
                             saveWith(it)
                         }
                     }
