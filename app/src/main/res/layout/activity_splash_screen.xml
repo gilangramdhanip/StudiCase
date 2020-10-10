@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activies.SplashScreen">
+
+    <TextView
+        android:textStyle="bold|italic"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="24dp"
+        android:text="STUDY CASE MOBILE APPLICATION KOTLIN"
+        android:id="@+id/txvSplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
