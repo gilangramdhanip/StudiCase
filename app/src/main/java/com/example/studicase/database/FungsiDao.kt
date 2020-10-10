@@ -10,11 +10,17 @@ interface FungsiDao {
     @Query("Select * from studycase")
     fun getStudy(): List<StudiCase>
 
+    @Query("Select * from studycase")
+    fun getStudyFromRoom(): LiveData<List<StudiCase>>
+
     @Query("SELECT * FROM studycase  WHERE title LIKE :query")
     fun getTitle(query: String): LiveData<List<StudiCase>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertStudy(studyCase: ArrayList<StudiCase>)
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    fun insertStudyRoom(studyCase: StudiCase)
 
     @Delete
     suspend fun deleteStudy(studyCase: StudiCase)

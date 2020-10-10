@@ -27,9 +27,9 @@ class DetailStudyCase : AppCompatActivity() {
 
         studyCase = intent.getParcelableExtra(EXTRA_DETAIL) as? StudiCase
 
-//        studyViewModel = ViewModelProvider(this).get(
-//            StudiCaseViewModel::class.java
-//        )
+        studyViewModel = ViewModelProvider(this).get(
+            StudiCaseViewModel::class.java
+        )
 
         val namaDepan : String
 
@@ -49,40 +49,40 @@ class DetailStudyCase : AppCompatActivity() {
         detail_title.setText(studyCase!!.title)
         detail_deskripsi.setText(studyCase!!.body)
 
-//        btn_update.setOnClickListener {
-//
-//            if(detail_title.text.isEmpty()){
-//                detail_title.setError("Judul tidak boleh kosong")
-//            }
-//            if(detail_deskripsi.text.isEmpty()){
-//                detail_deskripsi.setError("Deskripsi tidak boleh kosong")
-//            }
-//            if(detail_userId.text.isEmpty()){
-//                detail_userId.setError("UserId tidak boleh kosong")
-//            }
-//
-//            studyViewModel.updateStudy(
-//                StudiCase(
-//                    userId = detail_userId.text.toString(),
-//                    id = studyCase!!.id,
-//                    title = detail_title.text.toString(),
-//                    body = detail_deskripsi.text.toString()
-//                )
-//            )
-//            finish()
-//        }
-//
-//        btn_delete.setOnClickListener {
-//            studyViewModel.deleteStudy(
-//                StudiCase(
-//                    studyCase!!.userId,
-//                    studyCase!!.id,
-//                    studyCase!!.title,
-//                    studyCase!!.body
-//                )
-//            )
-//            finish()
-//        }
+        btn_update.setOnClickListener {
+
+            if(detail_title.text.isEmpty()){
+                detail_title.setError("Judul tidak boleh kosong")
+            }
+            if(detail_deskripsi.text.isEmpty()){
+                detail_deskripsi.setError("Deskripsi tidak boleh kosong")
+            }
+            if(detail_userId.text.isEmpty()){
+                detail_userId.setError("UserId tidak boleh kosong")
+            }
+
+            studyViewModel.updateStudy(
+                StudiCase(
+                    userId = detail_userId.text.toString(),
+                    id = studyCase!!.id,
+                    title = detail_title.text.toString(),
+                    body = detail_deskripsi.text.toString()
+                )
+            )
+            finish()
+        }
+
+        btn_delete.setOnClickListener {
+            studyViewModel.deleteStudy(
+                StudiCase(
+                    studyCase!!.userId,
+                    studyCase!!.id,
+                    studyCase!!.title,
+                    studyCase!!.body
+                )
+            )
+            finish()
+        }
 
 
     }

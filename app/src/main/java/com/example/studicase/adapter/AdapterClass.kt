@@ -13,7 +13,12 @@ import com.example.studicase.model.StudiCase
 import kotlinx.android.synthetic.main.activity_detail_study_case.view.*
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class AdapterClass(private val listData: List<StudiCase>): RecyclerView.Adapter<AdapterClass.ListViewHolder>() {
+class AdapterClass(private var listData: List<StudiCase>): RecyclerView.Adapter<AdapterClass.ListViewHolder>() {
+
+    fun setNotes(list: List<StudiCase>) {
+        this.listData = list
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,

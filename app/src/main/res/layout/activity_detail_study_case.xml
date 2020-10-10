@@ -47,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_imgColor" />
 
-    <TextView
+    <EditText
         android:padding="10dp"
         android:id="@+id/detail_userId"
         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_userId" />
 
-    <TextView
+    <EditText
         android:id="@+id/detail_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_title" />
 
-    <TextView
+    <EditText
         android:id="@+id/detail_deskripsi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -115,53 +115,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-<!--    <LinearLayout-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/detail_deskripsi"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
+    <LinearLayout
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_deskripsi"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-<!--        <LinearLayout-->
-<!--            android:layout_weight="0.5"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content">-->
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-<!--            <Button-->
-<!--                android:id="@+id/btn_delete"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:backgroundTint="#FF0000"-->
-<!--                android:text="Hapus"-->
-<!--                android:textColor="#fff"-->
-<!--                android:textSize="12sp"-->
-<!--                />-->
-<!--        </LinearLayout>-->
-
-
-
-<!--        <LinearLayout-->
-<!--            android:gravity="end"-->
-<!--            android:layout_weight="0.5"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <Button-->
-<!--                android:id="@+id/btn_update"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:background="#09FF02"-->
-<!--                android:text="Update"-->
-<!--                android:textColor="#fff"-->
-<!--                android:textSize="12sp"-->
-<!--                />-->
-<!--        </LinearLayout>-->
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FF0000"
+                android:text="Hapus"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
 
 
-<!--    </LinearLayout>-->
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#09FF02"
+                android:text="Update"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 
